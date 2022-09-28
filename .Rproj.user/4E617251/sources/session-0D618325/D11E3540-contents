@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Methods | On User Involvement in Research and Ageing and Health</title>
+  <meta name="description" content="Chapter 3 Methods | On User Involvement in Research and Ageing and Health" />
+  <meta name="generator" content="bookdown 0.29.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Methods | On User Involvement in Research and Ageing and Health" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Methods | On User Involvement in Research and Ageing and Health" />
+  
+  
+  
+
+<meta name="author" content="Joakim Frögren" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="aims.html"/>
+<link rel="next" href="results.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="svensk-sammanfattning.html"><a href="svensk-sammanfattning.html"><i class="fa fa-check"></i>Svensk sammanfattning</a></li>
+<li class="chapter" data-level="" data-path="original-papers.html"><a href="original-papers.html"><i class="fa fa-check"></i>Original papers</a></li>
+<li class="chapter" data-level="" data-path="definitions.html"><a href="definitions.html"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
+<li class="chapter" data-level="" data-path="my-journey.html"><a href="my-journey.html"><i class="fa fa-check"></i>My journey</a></li>
+<li class="chapter" data-level="" data-path="introducing-the-research-context.html"><a href="introducing-the-research-context.html"><i class="fa fa-check"></i>Introducing the research context</a></li>
+<li class="chapter" data-level="" data-path="research-projects-linked-to-the-studies.html"><a href="research-projects-linked-to-the-studies.html"><i class="fa fa-check"></i>Research projects linked to the studies</a></li>
+<li class="chapter" data-level="1" data-path="introduction-eller-background.html"><a href="introduction-eller-background.html"><i class="fa fa-check"></i><b>1</b> Introduction (eller Background)</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-eller-background.html"><a href="introduction-eller-background.html#theoretical-considerations-and-core-concepts"><i class="fa fa-check"></i><b>1.1</b> Theoretical considerations and core concepts</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-eller-background.html"><a href="introduction-eller-background.html#summing-uprationale"><i class="fa fa-check"></i><b>1.2</b> Summing up/Rationale</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="aims.html"><a href="aims.html"><i class="fa fa-check"></i><b>2</b> Aims</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="methods.html"><a href="methods.html#research-approach"><i class="fa fa-check"></i><b>3.0.1</b> Research approach</a></li>
+<li class="chapter" data-level="3.0.2" data-path="methods.html"><a href="methods.html#design-overview-of-the-four-studies"><i class="fa fa-check"></i><b>3.0.2</b> Design (Overview of the four studies)</a></li>
+<li class="chapter" data-level="3.0.3" data-path="methods.html"><a href="methods.html#project-context"><i class="fa fa-check"></i><b>3.0.3</b> Project context</a></li>
+<li class="chapter" data-level="3.0.4" data-path="methods.html"><a href="methods.html#participants"><i class="fa fa-check"></i><b>3.0.4</b> Participants</a></li>
+<li class="chapter" data-level="3.0.5" data-path="methods.html"><a href="methods.html#ethical-considerations"><i class="fa fa-check"></i><b>3.0.5</b> Ethical considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="results.html"><a href="results.html#study-i"><i class="fa fa-check"></i><b>4.0.1</b> Study I</a></li>
+<li class="chapter" data-level="4.0.2" data-path="results.html"><a href="results.html#study-ii"><i class="fa fa-check"></i><b>4.0.2</b> Study II</a></li>
+<li class="chapter" data-level="4.0.3" data-path="results.html"><a href="results.html#study-iii"><i class="fa fa-check"></i><b>4.0.3</b> Study III</a></li>
+<li class="chapter" data-level="4.0.4" data-path="results.html"><a href="results.html#study-iv"><i class="fa fa-check"></i><b>4.0.4</b> Study IV</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="discussion.html"><a href="discussion.html#methodological-considerations"><i class="fa fa-check"></i><b>5.0.1</b> Methodological considerations</a></li>
+<li class="chapter" data-level="5.0.2" data-path="discussion.html"><a href="discussion.html#strengths-and-limitations"><i class="fa fa-check"></i><b>5.0.2</b> Strengths and limitations</a></li>
+<li class="chapter" data-level="5.0.3" data-path="discussion.html"><a href="discussion.html#conclusions"><i class="fa fa-check"></i><b>5.0.3</b> Conclusions</a></li>
+<li class="chapter" data-level="5.0.4" data-path="discussion.html"><a href="discussion.html#implications-for-research-policy-and-practice"><i class="fa fa-check"></i><b>5.0.4</b> Implications for research, policy and practice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgement.html"><a href="acknowledgement.html"><i class="fa fa-check"></i>Acknowledgement</a></li>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i>Appendices</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">On User Involvement in Research and Ageing and Health</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methods" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Methods<a href="methods.html#methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- OJ: Först metodologin för att integrera delstudierna i kappan.
+Ramverk/modell för att belysa syftet: to extend and deepen the current knowledge of user involvement in research on ageing and health. -->
+<p>To achieve the overarching aim, a combination of qualitative and quantitative methods was used. <strong>The four studies stemmed from four different research projects that all involved or targeted users in different ways</strong>. <!-- SI: Behövs detta här, har framgått av study context? --> <!-- OJ: Vore det inte lämpligt att beskriva projekten här i metod?
+Namnge projekt i tabellen?
+
+Eller ha en tidsaxel (figur) med de olika projekten. När studier genomfördes, när paper publicerades/submittades. --></p>
+<p>Table 1 provides an overview of the studies included in the thesis.</p>
+<!--
+
+Table 1 
+Overview of studies I-IV 
+    Study I Study II    Study III   Study IV
+Aim Through **usability testing**  with intended users, investigate the interest in and the potential usefulness and usability of a health-oriented app developed with the aim of supporting older people with cognitive impairment and their informal carers in everyday life. To explore the awareness and attitudes to public involvement in research on ageing and health among older people in Sweden. Based on a Swedish Citizen Science initiative on housing accessibility targeting older adults and people with disabilities, investigate characteristics of participants, and changes in attitudes after participation.  Through research circles with non-academic representatives and researchers, gain a better understanding of crucial variables for decision-making linked to the provision of accessible housing for the ageing population in Sweden.
+Method  Interviews, quantitative evaluation Statistical analysis    Statistical analysis    Content analysis & research circles
+Participants    Persons with MCI and their informal carers, 
+N = 38  Persons 60 years or older, 
+N=881   Older adults and people with disabilities
+n=147
+    Researchers, representatives from senior citizen organisation, national public authorities (National Board of Health and Welfare); the municipal building administration and health care administration; private architecture and engineering consultancy and service providers within the assistive device sector
+ N = 15
+
+Data collection Structured interviews, evaluative usability tests   Survey  Survey  Research Circle
+Analysis    Quantitative analysis   Statistical analysis    Statistical analysis    Deductive content analysis
+
+-->
+<p><!-- OJ: Usability testing till metod i tabellen?
+Renodla tabellen.
+
+Se över rubriker och ordning, förslag:
+ Project
+ Aim
+ Design
+ Method
+ Participants --></p>
+<p><!-- OJ apropå "Statistical analysis" i Study III: Från manus Study III:
+
+this study had a quantitative before-and-after design with data collected via online questionnaires before (pre-Q) and after (post-Q) the completion of the HX --></p>
+<!-- OJ apropå MCI: Var sparsam med att använda akronymer – det finns inget max antal ord.  -->
+<!-- OJ apropå Participants i Study IV: Förenkla i tabellen. Flytta detta innehåll till texten. 
+
+Professionals involved in health care, planning, and housing provision, older adults and researchers. -->
+<!-- OJ apropå Analysis i Study III: Undvik celler med samma innehåll (method/analysis) -->
+<div id="research-approach" class="section level3 hasAnchor" number="3.0.1">
+<h3><span class="header-section-number">3.0.1</span> Research approach<a href="methods.html#research-approach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Here I will give an account of the scientific point of departure and the view of knowledge that constitutes the basic assumption for the methods that I have used.</em></p>
+<!-- OJ: Metod i kappan eller i de olika delstudierna? -->
+</div>
+<div id="design-overview-of-the-four-studies" class="section level3 hasAnchor" number="3.0.2">
+<h3><span class="header-section-number">3.0.2</span> Design (Overview of the four studies)<a href="methods.html#design-overview-of-the-four-studies" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<!-- Tabellen ovan flyttas hit? -->
+<!-- OJ: Alternativt beskriva en studie i taget baserat på tabell 1. Dvs. fyra jämna beskrivningar med samma rubriker. -->
+</div>
+<div id="project-context" class="section level3 hasAnchor" number="3.0.3">
+<h3><span class="header-section-number">3.0.3</span> Project context<a href="methods.html#project-context" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>The four studies not predetermined when I began my doctoral studies although for Study II-IV there were overarching ideas about their approximate layout at the time of the start of my PhD position at LU.</li>
+<li>For Study I, part of the project SMART4MD, a combination of qualitative and quantitative methods was used when designing the usability study, but where the final assessment was of a qualitative nature, namely…</li>
+<li>For Study II and III quantitative methods were used in form of…</li>
+<li>For Study IV, qualitative methods were used in form of…</li>
+</ul>
+</div>
+<div id="participants" class="section level3 hasAnchor" number="3.0.4">
+<h3><span class="header-section-number">3.0.4</span> Participants<a href="methods.html#participants" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="recruitment-sampling-procedures" class="section level4 hasAnchor" number="3.0.4.1">
+<h4><span class="header-section-number">3.0.4.1</span> Recruitment/ sampling procedures<a href="methods.html#recruitment-sampling-procedures" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>In Study I, the recruitment of participants was made in somewhat different ways in <strong>Spain</strong> <!-- OJ: Första gången Spain nämns. --> vs. Sweden. In Sweden…. while in Spain…</li>
+<li>When it comes to Study II, the recruitment took place by sending out a questionnaire to 3000… how these were selected was done through…</li>
+<li>In the third study, participants were recruited by first telephone calls to associations, then email requests to members…</li>
+<li>In the fourth study, the recruitment took place through…</li>
+</ul>
+</div>
+<div id="participant-characteristics" class="section level4 hasAnchor" number="3.0.4.2">
+<h4><span class="header-section-number">3.0.4.2</span> Participant characteristics<a href="methods.html#participant-characteristics" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>In study I, twenty dyads from Sweden and twenty dyads from Spain participated. They were between X and Y years old and X% were women. Moreover…</li>
+<li>In all, 881 respondended to the questionnaire in Study II. What characterised the participants was that…</li>
+<li>In the third study aimed at older adults and people with disabilities, 100 people participated… describe the difference between full participants and partial participants…</li>
+<li>In Study IV, the paticipants consisted of three researchers and 12 non-academic actors…</li>
+</ul>
+</div>
+<div id="data-collection-and-analyses" class="section level4 hasAnchor" number="3.0.4.3">
+<h4><span class="header-section-number">3.0.4.3</span> Data collection and analyses<a href="methods.html#data-collection-and-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Here I will write an introductory, overall paragraph about qualitative and quantitative methods</p>
+<ul>
+<li>In study I, qualitative data was collected through interviews and quantitative data through Standard Usability Scale (SUS) and other usability tests… The data was then analyzed both qualitatively and quantitatively…</li>
+<li>In study II and III, data was collected through questionnioaires …statistical analyses</li>
+<li>In study IV qualitative data ….through recorded research circle sessions… transcribed and deductively analysed….</li>
+</ul>
+<div id="usability-tests" class="section level5 hasAnchor" number="3.0.4.3.1">
+<h5><span class="header-section-number">3.0.4.3.1</span> Usability tests<a href="methods.html#usability-tests" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Here I will explain what usability tests are and how we went about it in Study IV.</p>
+</div>
+<div id="research-circles" class="section level5 hasAnchor" number="3.0.4.3.2">
+<h5><span class="header-section-number">3.0.4.3.2</span> Research circles<a href="methods.html#research-circles" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Here I will explain what research circles are and how we went about it in Study IV.</p>
+</div>
+<div id="statistical-analyses" class="section level5 hasAnchor" number="3.0.4.3.3">
+<h5><span class="header-section-number">3.0.4.3.3</span> Statistical analyses<a href="methods.html#statistical-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Here I will introduce and go through which statistical methods/analyses were used/done in studies II and III.</p>
+</div>
+<div id="deductive-content-analyses" class="section level5 hasAnchor" number="3.0.4.3.4">
+<h5><span class="header-section-number">3.0.4.3.4</span> Deductive content analyses<a href="methods.html#deductive-content-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Here I will report on the analysis that was done in study IV.</p>
+</div>
+</div>
+</div>
+<div id="ethical-considerations" class="section level3 hasAnchor" number="3.0.5">
+<h3><span class="header-section-number">3.0.5</span> Ethical considerations<a href="methods.html#ethical-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here I will briefly describe what “ethical considerations” are and on an overall level report which studies received ethics permission and which were not deemed to need it and why. I will emphasize that the ethics were considered on the basis of utility vs. risks, on the basis of promoting the autonomy of the participants and on the basis that it is ethically motivated with user involvement in the research process.</p>
+<div id="benefits-and-risks" class="section level4 hasAnchor" number="3.0.5.1">
+<h4><span class="header-section-number">3.0.5.1</span> Benefits and risks<a href="methods.html#benefits-and-risks" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Here I will briefly describe the Declaration of Helsinki and benefits vs. risks and then describe how I reasoned about this in relation to my four studies.</p>
+<p>In a separate paragraph I will describe how data has been handled in the various studies and mention GDPR and LU Servers and so on.</p>
+</div>
+<div id="autonomy" class="section level4 hasAnchor" number="3.0.5.2">
+<h4><span class="header-section-number">3.0.5.2</span> Autonomy<a href="methods.html#autonomy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Here I will take up a reference from, for example, the Swedish Research Council that it is important to respect people’s autonomy and that they make well-informed decisions.</p>
+</div>
+<div id="involvement-in-the-research-process" class="section level4 hasAnchor" number="3.0.5.3">
+<h4><span class="header-section-number">3.0.5.3</span> Involvement in the research process<a href="methods.html#involvement-in-the-research-process" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Here I will describe how an ethical recommendation is made that people outside of the individual researchers are involved in the research process because it is a strength for relevance and transparency.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="aims.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

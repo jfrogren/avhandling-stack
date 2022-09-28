@@ -1,0 +1,16 @@
+# Original papers {-}
+
+The thesis comprises the following four studies, which will be referred to in the text by their Roman numerals. 
+
+**I** Quintana, M., Anderberg, P., Sanmartin Berglund, J., Frögren, J., Cano, N., Cellek, S., Zhang, J., … (2020). Feasibility-usability study of a tablet app adapted specifically for persons with cognitive impairment — smart4md (support monitoring and reminder technology for mild dementia). *International Journal of Environmental Research and Public Health*, 17(18), 6816. http://dx.doi.org/10.3390/ijerph17186816
+
+**II** Frögren, J., Schmidt, S. M., Kylén, M., Jonsson, O., Slaug, B., & Iwarsson, S. (2022). Awareness of and attitudes towards public involvement in research on ageing and health among older people in Sweden. *PLoS One*, 17(6), 0269993. http://dx.doi.org/10.1371/journal.pone.0269993
+
+**III** Frögren, J., Granbom, M., Jonsson, O., Bergman, M. Iwarsson, S. Distinctive participant characteristics and attitudinal changes in a citizen science initiative on housing accessibility targeting older adults and people with disabilities. (Submitted).
+
+**IV** Jonsson, O., Frögren, J., Haak, M., Slaug, B., & Iwarsson, S. (2021).
+Understanding the wicked problem of providing accessible housing for the
+ageing population in Sweden. *International Journal of Environmental Research
+and Public Health*, 18(3), 1169. http://dx.doi.org/10.3390/ijerph18031169
+
+\newpage

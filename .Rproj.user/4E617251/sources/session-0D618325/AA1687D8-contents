@@ -1,0 +1,666 @@
+% This is the Reed College LaTeX thesis template. Most of the work
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See https://www.reed.edu/cis/help/LaTeX/index.html for help. There are a
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment.
+% They won't show up in the document, and are useful for notes
+% to yourself and explaining commands.
+% Commenting also removes a line from the document;
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in
+% the 2002-2003 Senior Handbook. Ask a librarian to check the
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\documentclass[12pt,twoside]{reedthesis}
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: https://www.ctan.org/
+%%
+\usepackage{graphicx,latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb,amsthm}
+\usepackage{longtable,booktabs,setspace}
+\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+\usepackage[hyphens]{url}
+% Added by CII
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{float}
+\floatplacement{figure}{H}
+% Thanks, @Xyv
+\usepackage{calc}
+% End of CII addition
+\usepackage{rotating}
+
+% Next line commented out by CII
+%%% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the
+% bibliography is included.
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+
+% Added by CII (Thanks, Hadley!)
+% Use ref for internal links
+\renewcommand{\hyperref}[2][???]{\autoref{#1}}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Subsection}
+% End of CII addition
+
+% Added by CII
+\usepackage{caption}
+\captionsetup{width=5in}
+% End of CII addition
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+% Syntax highlighting #22
+  \usepackage{color}
+  \usepackage{fancyvrb}
+  \newcommand{\VerbBar}{|}
+  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+  % Add ',fontsize=\small' for more characters per line
+  \usepackage{framed}
+  \definecolor{shadecolor}{RGB}{248,248,248}
+  \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+  \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\BuiltInTok}[1]{#1}
+  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+  \newcommand{\ExtensionTok}[1]{#1}
+  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\ImportTok}[1]{#1}
+  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+  \newcommand{\NormalTok}[1]{#1}
+  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+  \newcommand{\RegionMarkerTok}[1]{#1}
+  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+% To pass between YAML and LaTeX the dollar signs are added by CII
+\title{On User Involvement in Research and Ageing and Health}
+\author{Joakim Frögren}
+% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\date{}
+\division{}
+\advisor{}
+\institution{Lund University}
+\degree{Bachelor of Arts}
+%If you have two advisors for some reason, you can use the following
+% Uncommented out by CII
+% End of CII addition
+
+%%% Remember to use the correct department!
+\department{Department of Health Sciences}
+% if you're writing a thesis in an interdisciplinary major,
+% uncomment the line below and change the text as appropriate.
+% check the Senior Handbook if unsure.
+%\thedivisionof{The Established Interdisciplinary Committee for}
+% if you want the approval page to say "Approved for the Committee",
+% uncomment the next line
+%\approvedforthe{Committee}
+
+% Added by CII
+%%% Copied from knitr
+%% maxwidth is the original width if it's less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+% From {rticles}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+% As noted by @mirh [2] is needed instead of [3] for 2.12
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc} % for calculating minipage widths
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\renewcommand{\contentsname}{Table of Contents}
+% End of CII addition
+
+\setlength{\parskip}{0pt}
+
+% Added by CII
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\Acknowledgements{
+
+}
+
+\Dedication{
+
+}
+
+\Preface{
+
+}
+
+\Abstract{
+The preface pretty much says it all.
+
+\par
+
+Second paragraph of abstract starts here.
+}
+
+	\usepackage{setspace}\onehalfspacing
+% End of CII addition
+%%
+%% End Preamble
+%%
+%
+\begin{document}
+
+% Everything below added by CII
+  \maketitle
+
+\frontmatter % this stuff will be roman-numbered
+\pagestyle{empty} % this removes page numbers from the frontmatter
+
+
+
+  \hypersetup{linkcolor=black}
+  \setcounter{secnumdepth}{2}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+
+  \listoftables
+
+  \listoffigures
+  \begin{abstract}
+    The preface pretty much says it all.
+
+    \par
+
+    Second paragraph of abstract starts here.
+  \end{abstract}
+
+\mainmatter % here the regular arabic numbering starts
+\pagestyle{fancyplain} % turns page numbering back on
+
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Welcome to the \emph{R Markdown} thesis template. This template is based on (and in many places copied directly from) the Reed College LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before. Using \emph{R Markdown} will also allow you to easily keep track of your analyses in \textbf{R} chunks of code, with the resulting plots and output included as well. The hope is this \emph{R Markdown} template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+
+Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis. The use of LaTeX in combination with \emph{Markdown} is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities. After working with \emph{Markdown} and \textbf{R} together for a few weeks, we are confident this will be your reporting style of choice going forward.
+
+\textbf{Why use it?}
+
+\emph{R Markdown} creates a simple and straightforward way to interface with the beauty of LaTeX. Packages have been written in \textbf{R} to work directly with LaTeX to produce nicely formatting tables and paragraphs. In addition to creating a user friendly interface to LaTeX, \emph{R Markdown} also allows you to read in your data, to analyze it and to visualize it using \textbf{R} functions, and also to provide the documentation and commentary on the results of your project. Further, it allows for \textbf{R} results to be passed inline to the commentary of your results. You'll see more on this later.
+
+\textbf{Who should use it?}
+
+Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use \emph{R Markdown}. Of particular use should be anyone in the sciences, but the user-friendly nature of \emph{Markdown} and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
+
+\textbf{For additional help with bookdown}
+
+Please visit \href{https://bookdown.org/yihui/bookdown/}{the free online bookdown reference guide}.
+
+\hypertarget{svensk-sammanfattning}{%
+\chapter*{Svensk sammanfattning}\label{svensk-sammanfattning}}
+\addcontentsline{toc}{chapter}{Svensk sammanfattning}
+
+Hejsan (Jonsson, Frögren, Haak, Slaug, \& Iwarsson, 2021)
+
+\hypertarget{original-papers}{%
+\chapter{Original papers}\label{original-papers}}
+
+The thesis comprises the following four studies, which will be referred to in the text by their Roman numerals.
+
+\textbf{I.} Quintana, M., Anderberg, P., Sanmartin Berglund, J., Frögren, J., Cano, N., Cellek, S., \ldots{} \& Garolera, M. (2020). Feasibility-Usability Study of a Tablet App Adapted Specifically for Persons with Cognitive Impairment---SMART4MD (Support Monitoring and Reminder Technology for Mild Dementia). International Journal of Environmental Research and Public Health, 17(18), 6816.20).
+
+\textbf{II.} Frögren, J., Schmidt, S. M., Kylén, M., Jonsson, O., Slaug, B., Iwarsson, S. Awareness of and attitudes towards public involvement in research on ageing and health among older people in Sweden. Plos one, 17(6), e0269993.
+
+\textbf{III.} Frögren, J., Granbom, M., Jonsson, O., Bergman, M. Iwarsson, S. Distinctive Participant Characteristics and Attitudinal Changes in a Citizen Science Initiative on Housing Accessibility Targeting Older Adults and People with Disabilities (Submitted in July 2022)
+
+\textbf{IV.} Jonsson, O., Frögren, J., Haak, M., Slaug, B., \& Iwarsson, S. (2021). Understanding the wicked problem of providing accessible housing for the ageing population in Sweden. International Journal of Environmental Research and Public Health, 18(3), 1169.
+
+\hypertarget{definitions-as-used-in-the-thesis}{%
+\chapter{Definitions as used in the thesis}\label{definitions-as-used-in-the-thesis}}
+
+Ageing = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+Forms of knowledge = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+User involvement = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+Public involvement = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+Research in Ageing and Health = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+Older people = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+Older adults = Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci (Reference, YYYY).
+
+\hypertarget{abbreviations}{%
+\chapter{Abbreviations}\label{abbreviations}}
+
+CASE Lorem ipsum dolor sit amet
+GDS Lorem ipsum dolor sit amet
+SMART4MD Lorem ipsum dolor sit amet
+SWEAH Lorem ipsum dolor sit amet
+UserAge UserAge is a 6-year research program with the aim to enhance the execution of high-quality research and to increase the knowledge about the added value stemming from user involvement in the research process.
+
+\hypertarget{my-journey}{%
+\chapter{My journey}\label{my-journey}}
+
+My entry point to this doctoral thesis was:
+* Master's studies in cognitive science
+* A decade-long work as a speech service interpreter which resulted in an interest in how to support people's abilities using strategies and technology.
+* This led to starting a Phd at BTH in applied health technology which, and continuing doctoral studies in gerontology (medical science) at Lund University
+
+\hypertarget{introducing-the-research-context}{%
+\chapter{Introducing the research context}\label{introducing-the-research-context}}
+\begin{itemize}
+\tightlist
+\item
+  Research has been carried out at the Department of Health at BTH + at Department of Health Sciences in the research group Active and Healthy Ageing, affiliated with Centre for Ageing and Supportive Environments at Lund University, Sweden
+\item
+  Learning process has been supported by Swedish National Graduate School for Competetive Science on Ageing and Health (SWEAH).
+\item
+  This thesis is on part of the research program ``UserAge.'' The program aims to increase our understanding of the opportunities and challenges presented by the participation of knowledge users in research on ageing and health.
+\item
+  This thesis only one of several PhD theses based on the UserAge program.
+\item
+  I entered my doctoral studies with a Master of Science in Cognitive Science and with \ldots{} As a cognitive scientist\ldots{} Together these perspectives have been valuable in\ldots.
+\item
+  It has been inspiring, challenging to conduct this thesis\ldots{} Authour constellations varies and represents different disciplnes and scientific traditions. The meetings this gave rise to have contributed to the content of this thesis
+\item
+  Being part of SWEAH has also given rise to more perspectives, meetings with people from different disciplines and research environments, new theories have challenged me\ldots{}
+\end{itemize}
+\hypertarget{research-projects-linked-to-the-studies}{%
+\chapter{Research projects linked to the studies}\label{research-projects-linked-to-the-studies}}
+
+The four studies stemmed from four different research projects that all involved or targeted users in different ways:
+
+SMART4MD (Support Monitoring and Reminder Technology for Mild Dementia) - a four year project co-financed by the European Union under the EU Framework Programme for Research and Innovation -- Horizon 2020, with grant agreement number 643399, which aims to improve the quality of life of older people with cognitive decline or mild dementia and their carers, increase treatment compliance, reduce dementia-related costs by helping reduce the number of missed appointments and of hospital re-admissions and help reduce functional decline.
+
+The Panel Study, an empirical project of the UserAge program that aims to determine the awareness and understanding of and attitudes toward user involvement in research among different categories of knowledge users and researchers over time.
+
+The Housing Experiment (HX) was a large-scale CS initiative with housing accessibility as the topic in which older adults and people with disabilities were the main target groups. HX was implemented in collaboration between Public \& Science and researchers at the Centre for Ageing and Support Environments (CASE) at Lund University, involving the three largest Swedish senior citizens' associations (approximately 695,000 members in total) as partners as well as the software company MiThings. The aim of the HX was to engage people across Sweden to assess environmental barriers in the ordinary housing stock, using a mobile app developed for this purpose (Granbom, Slaug, Bronéus, Bergman \& Iwarsson, submitted to Citizen Science: Theory and Practice). The mobile app was based on Housing Enabler, which is an instrument for valid and reliable assessment of housing accessibility (Iwarsson et al., 2012).
+
+The project Decision Support System for Improved Accessibility in Multi-Family Housing with the overarching aim to develop, test, and evaluate a new decision support system for improved accessibility in multi-family housing, and to contribute to efficient collaboration among professionals involved in health care, planning, and housing provision, as well as citizens. The project team of this project consisted of researchers and two non-academic partners: a public housing company and a micro-sized software development company.
+
+\hypertarget{introduction-1}{%
+\chapter{Introduction}\label{introduction-1}}
+
+Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci. Eos laboriosam inventore et quidem voluptatem eos obcaecati quisquam et quia officia.In dolorum inventore quo harum incidunt ex sapiente qui nisi earum. Et recusandae autem est veritatis minima eum fuga praesentium et provident dicta. Qui quis natus est quam incidunt est temporibus ullam sit ratione aperiam sit dicta dolorem? Qui velit quaerat ad consequatur deserunt ut minus officia in eveniet voluptates est laudantium repellat
+
+\hypertarget{theoretical-considerations-and-core-concepts}{%
+\section{Theoretical considerations and core concepts}\label{theoretical-considerations-and-core-concepts}}
+
+Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci. Eos laboriosam inventore et quidem voluptatem eos obcaecati quisquam et quia officia.In dolorum inventore quo harum incidunt ex sapiente qui nisi earum. Et recusandae autem est veritatis minima eum fuga praesentium et provident dicta. Qui quis natus est quam incidunt est temporibus ullam sit ratione aperiam sit dicta dolorem? Qui velit quaerat ad consequatur deserunt ut minus officia in eveniet voluptates est laudantium repellat in molestiae minus et dolorem quod! Sed animi eveniet non soluta provident eos beatae asperiores. 33 consequatur sint ea autem sunt ad adipisci dolorem et porro nostrum. Et rerum quia et soluta totam odio omnis ex sunt molestias! Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci. Eos laboriosam inventore et quidem voluptatem eos obcaecati quisquam et quia officia. In dolorum inventore quo harum incidunt ex sapiente qui nisi earum. Et recusandae autem est veritatis minima eum fuga praesentium et provident dicta. Qui quis natus est quam incidunt est temporibus ullam sit ratione aperiam sit dicta dolorem? Qui velit quaerat ad consequatur deserunt ut minus officia in eveniet voluptates est laudantium repellat in molestiae minus et dolorem quod!
+
+\hypertarget{summing-uprationale}{%
+\section{Summing up/Rationale}\label{summing-uprationale}}
+
+Lorem ipsum dolor sit amet. Vel obcaecati enim et molestiae neque non magnam natus qui autem sunt qui sapiente minus ut asperiores quas et iure eveniet. Et voluptatem inventore ut soluta reiciendis aut deserunt facilis sed consequatur debitis et repellat adipisci. Eos laboriosam inventore et quidem voluptatem eos obcaecati quisquam et quia officia.In dolorum inventore quo harum incidunt ex sapiente qui nisi earum. Et recusandae autem est veritatis minima eum fuga praesentium et provident dicta. Qui quis natus est quam incidunt est temporibus ullam sit ratione aperiam sit dicta dolorem? Qui velit quaerat ad consequatur deserunt ut minus officia
+
+\hypertarget{aims}{%
+\chapter{Aims}\label{aims}}
+
+The overarching aim of this thesis was to extend and deepen the current knowledge of user involvement in research on ageing and health, where users refers to representatives of older adults as well as other societal groups and actors with a direct or indirect interest in the research being conducted. Moreover to contribute strategies for involving users in future research on ageing and health.
+
+\hypertarget{the-specific-aims-of-the-studies-were-as-follows}{%
+\section{The specific aims of the studies were as follows:}\label{the-specific-aims-of-the-studies-were-as-follows}}
+\begin{itemize}
+\tightlist
+\item
+  Study I: Through usability testing with intended users, investigate the interest in and the potential usefulness and usability of a health-oriented app developed with the aim of supporting older people with cognitive impairment and their informal carers in everyday life.
+\item
+  Study II: To explore the awareness and attitudes to public involvement in research on ageing and health among older people in Sweden.
+\item
+  Study III: Based on a Swedish Citizen Science initiative on housing accessibility targeting older adults and people with disabilities, investigate characteristics of participants, and changes in attitudes after participation.
+\item
+  Study IV: Through research circles with non-academic representatives and researchers, gain a better understanding of crucial variables for decision-making linked to the provision of accessible housing for the ageing population in Sweden.
+\end{itemize}
+\hypertarget{methods}{%
+\chapter{Methods}\label{methods}}
+
+To achieve the overarching aim, a combination of qualitative and quantitative methods were used. The four studies stemmed from four different research projects that all involved or targeted users in different ways.
+
+Table 1 provides an overview of the studies included in the thesis.
+
+\hypertarget{research-approach}{%
+\section{Research approach}\label{research-approach}}
+
+\emph{Here I will give an account of the scientific point of departure and the view of knowledge that constitutes the basic assumption for the methods that I have used.}
+
+\hypertarget{design-overview-of-the-four-studies}{%
+\section{Design (Overview of the four studies)}\label{design-overview-of-the-four-studies}}
+\begin{itemize}
+\tightlist
+\item
+  The four studies not predetermined when I began my doctoral studies although for Study II-IV there were overarching ideas about their approximate layout at the time of the start of my PhD position at LU.
+\item
+  For Study I, part of the project SMART4MD, a combination of qualitative and quantitative methods was used when designing the usability study, but where the final assessment was of a qualitative nature, namely\ldots{}
+\item
+  For Study II and III quantitative methods were used in form of\ldots{}
+\item
+  For Study IV, qualitative methods were used in form of\ldots{}
+\end{itemize}
+\hypertarget{participants}{%
+\section{Participants}\label{participants}}
+
+\hypertarget{recruitment-sampling-procedures}{%
+\subsection{Recruitment/ sampling procedures}\label{recruitment-sampling-procedures}}
+\begin{itemize}
+\tightlist
+\item
+  In Study I, the recruitment of participants were made in somewhat different ways in Spain vs.~Sweden. In Sweden\ldots. while in Spain\ldots{}
+\item
+  When it comes to Study II, the recruitment took place by sending out a questionnaire to 3000\ldots{} how these were selected was done through\ldots{}
+\item
+  In the third study, participants were recruited by first telephone calls to associations, then email requests to members\ldots{}
+\item
+  In the fourth study, the recruitment took place through\ldots{}
+\end{itemize}
+\hypertarget{participant-characteristics}{%
+\subsection{Participant characteristics}\label{participant-characteristics}}
+\begin{itemize}
+\tightlist
+\item
+  In study I, twenty dyads from Sweden and twenty dyads from Spain participated. They were between X and Y years old and X\% were women. Moreover\ldots{}
+\item
+  In all, 881 respondended to the questionnaire in Study II. What characterised the participants was that\ldots{}
+\item
+  In the third study aimed at older adults and people with disabilities, 100 people participated\ldots{} describe the difference between full participants and partial participants\ldots{}
+\item
+  In Study IV, the paticipants consisted of three researchers and 12 non-academic actors\ldots{}
+\end{itemize}
+\hypertarget{data-collection-and-analyses}{%
+\subsection{Data collection and analyses}\label{data-collection-and-analyses}}
+
+Here I will write an introductory, overall paragraph about qualitative and quantitative methods
+\begin{itemize}
+\tightlist
+\item
+  In study I, qualitative data was collected through interviews and quantitative data through Standard Usability Scale (SUS) and other usability tests\ldots{} The data was then analyzed both qualitatively and quantitatively\ldots{}
+\item
+  In study II and III, data was collected through questionnioaires \ldots statistical analyses
+\item
+  In study IV qualitative data \ldots.through recorded research circle sessions\ldots{} transcribed and deductively analysed\ldots.
+\end{itemize}
+\hypertarget{usability-tests}{%
+\subsubsection{Usability tests}\label{usability-tests}}
+
+Here I will explain what research circles are and how we went about it in Study IV.
+
+\hypertarget{research-circles}{%
+\subsubsection{Research circles}\label{research-circles}}
+
+Here I will explain what research circles are and how we went about it in Study IV.
+
+\hypertarget{statistical-analyses}{%
+\subsubsection{Statistical analyses}\label{statistical-analyses}}
+
+Here I will introduce and go through which statistical methods/analyses were used/done in studies II and III.
+
+\hypertarget{deductive-content-analyses}{%
+\subsubsection{Deductive content analyses}\label{deductive-content-analyses}}
+
+Here I will report on the analysis that was done in study IV.
+
+\hypertarget{ethical-considerations}{%
+\section{Ethical considerations}\label{ethical-considerations}}
+
+Here I will briefly describe what ``ethical considerations'' are and on an overall level report which studies received ethics permission and which were not deemed to need it and why. I will emphasize that the ethics were considered on the basis of utility vs.~risks, on the basis of promoting the autonomy of the participants and on the basis that it is ethically motivated with user involvement in the research process.
+
+\hypertarget{benefits-and-risks}{%
+\subsection{Benefits and risks}\label{benefits-and-risks}}
+
+Here I will briefly describe the Declaration of Helsinki and benefits vs.~risks and then describe how I reasoned about this in relation to my four studies.
+
+In a separate paragraph I will describe how data has been handled in the various studies and mention GDPR and LU Servers and so on.
+
+\hypertarget{autonomy}{%
+\subsection{Autonomy}\label{autonomy}}
+
+Here I will take up a reference from, for example, the Swedish Research Council that it is important to respect people's autonomy and that they make well-informed decisions.
+
+\hypertarget{involvement-in-the-research-process}{%
+\subsection{Involvement in the research process}\label{involvement-in-the-research-process}}
+
+Here I will describe how an ethical recommendation is made that people outside of the individual researchers are involved in the research process because it is a strength for relevance and transparency.
+
+\hypertarget{results}{%
+\chapter{Results}\label{results}}
+
+The four studies that make up this thesis contributed to the overarching aim which was to extend and deepen the current knowledge of user involvement in research on ageing and health, where users refer to representatives of older adults as well as other societal groups and actors with a direct or indirect interest in the research being conducted. The main result emerging from the four studies is that user involvement has a clear potential to broaden researchers' understanding of the complexity of a societal problem, but that a lack of certain central actors or groups risks creating an incomplete or downright distorted picture of the reality that researchers strive to understand, explain and improve.
+
+Here I might have a figure to illustrate the result
+
+\hypertarget{study-i}{%
+\section{Study I}\label{study-i}}
+
+The results from Study I will be summarized in one paragraph.
+* Overall positive attitude towards the app that was developed based on the evaluation that was made.
+* Standard measures of usability (SUS) not reliable to use on a target goup with cognitive decline - confusing.
+* That older people form a heterogeneous group with varied knowledge about and familiarity with mobile digital technology. Thus while a few individuals with less cognitive impairment and a greater awareness and knowledge of what is possible to achieve with technology today, might find the app very limited and not useful. While on the other hand individuals 90+ might find the technology challenging due to their overall bodily function such as swollen fingers, and thus really need to see a clear purpose with this technology in order to find it worthy to spend valuable time exploring and learning it.
+* Moreover, that less exposure to similar technology will likely effect both ability and self-esteem and thus need to be taken into consideration when introducing an app.
+* That it can be parts that make up entertainment (cognitive games) that can prove to be the most appreciated of all the parts in a content, even if these do not constitute what, based on the plan, is intended as the central content.
+* As to the app development that more ``common ground'' between developers of technology and end users would make the process easier and would require less iterations.
+
+\hypertarget{study-ii}{%
+\section{Study II}\label{study-ii}}
+
+The results from Study II will be summarized in one paragraph.
+* Engaging older people in Sweden in research targeting active involvement in research presents a challenge.
+* The study shows an over-representation of people with higher education, who tend to be more aware, have previous experience, and are more willing to be involved in research with public involvement.
+* This implies a risk that groups with lower education are not represented, and that knowledge co-produced with mostly highly educated groups will lead to a biased picture. Further studies are needed to understand how an increased awareness of research and willingness to participate can be achieved.
+
+\hypertarget{study-iii}{%
+\section{Study III}\label{study-iii}}
+
+The results from Study III will be summarized in one paragraph.
+* In response to the lack of systematic analyses of CS initiatives from the participants' perspective, this study contributes with knowledge about participant characteristics and attitudinal changes in a Swedish CS initiative on housing accessibility with older adults and people with disabilities as the main target group.
+* The low response and completion rates reinforce the picture from earlier studies that it is challenging to get older adults in Sweden to participate in research about research. This is especially true for people with a lower level of education.
+* The fact that mobile digital literacy and functional ability were factors characterizing the full participants in the study strengthens the image from previous studies that limitations in these areas affect the interest in or ability to get involved in research.
+* The only attitudinal change shown, in the reversed direction of what could be anticipated regarding housing accessibility, should be seen in the light of the predominantly positive attitudes prior to the HX.
+* Further research is warranted to investigate how CS initiatives targeting older adults and people with disabilities could be designed, prepared and executed to elicit more commitment and interest in research and the research topic at stake.
+
+\hypertarget{study-iv}{%
+\section{Study IV}\label{study-iv}}
+
+The results from Study IV will be summarized in one paragraph.
+* While discussions regarding the provision of accessible housing for the ageing population among researchers and representatives of housing sector and public institutions are dominated by socioeconomic matters, the multiple dimensions of this wicked problem are intertwined in a complex manner.
+* This is critical for decision-making, which, to a large extent, takes place in parallel organizations and processes with insufficient communication among the actors involved, which speaks to the need for boundary work.
+* Decision-making linked to housing accessibility should not be approached solely considering biophysical or financial variables. Rather, issues related to ethics, aesthetics, and empathy variables that are interrelated should not be ignored.
+* The framework used in this study can serve as a cognitive tool for decision-makers, and the findings could increase the awareness of the diversity of individual thinking involved when addressing this wicked problem.
+* Acting upon the critical variables identified in this study could contribute to progressive decision-making and more efficient ways to develop and provide accessible housing for the ageing population.
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+\begin{itemize}
+\tightlist
+\item
+  Since the key actors were highly selected, a limitation could be that they may not represent those that potentially could benefit from new knowledge produced.
+\item
+  In addition to the fact that the number of participants was low, a noteworthy shortcoming is that we failed to include key actors from the private housing sector, as those invited were not able or willing to participate. Their absence was raised as an issue by key actors from public housing companies with the argument that they are both players in the same market.
+\end{itemize}
+\hypertarget{discussion}{%
+\chapter{Discussion}\label{discussion}}
+
+Här kommer jag att inleda med ett kort, sammanfattande stycke om resultatet, samt eventuellt även att motivera varför och när det är användbart att beakta.
+
+\hypertarget{methodological-considerations}{%
+\section{Methodological considerations}\label{methodological-considerations}}
+
+\hypertarget{strengths-and-limitations}{%
+\section{Strengths and limitations}\label{strengths-and-limitations}}
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+\begin{itemize}
+\tightlist
+\item
+  Äldre människor en heterogen grupp med varierade kunskaper och förmågor, t.ex i förhållande till mobil digital teknik. Med andra ord med skiftande behov och perspektiv som utifrån en demokratisk aspekt är viktiga att ta i beaktning när syftet som forskare är att förklara, förstå och förbättra världen
+\item
+  Samhälleliga problem såsom the provision of housing accessibility är wicked som är svåra att ringa in och hitta en lösning på som alla eller en majoritet av samhällets aktörer och representanter är nöjda med.
+\item
+  MEN user involvement in research on ageing and health kan utgöra just ett sätt att göra komplexiteten begriplig och att fånga in flera dimensioner av problemet.
+\item
+  Dock utgör det en begränsning om vissa key actors are not able or willing to participate, vilket i wicked-problem fallet var fallet med privata aktörer. Det riskerar att ett potentiellt centralt perspektiv i en komplex fråga faller bort.
+\item
+  Eftersom forskning om åldrande och hälsa utgör just äldre personer en expertgrup (de är expert på sitt eget åldrande) och äldre är en heterogen grupp är denna grupp central när det kommer till user involvement in research on ageing and health. Men flera av studierna i denna avhandling indikerar att vissa kategorier/subgrupper av äldre personer are less willing or able to get actively involved. One limitation is thus that det som framkommer inte utgör en representativ bild av den verklighet i form av de problem och utmaningar som den äldre befolkningen i Sveige möter.
+  Denna skevhet eller begränsade representativitet har visserligen indikerats i andra studier men inte på samma systematiska sätt som här (tänker på panelstudien).
+\end{itemize}
+Strategier framåt (= rekommendationer för framtida forskare inom fältet) kan utgöras av att:
+\begin{itemize}
+\tightlist
+\item
+  Använda dimensionsmodellen (i wicked problemartikeln) som en utgångspunkt för att säkerställa att ett komplext problem inte lyfts fram alltför ensidigt utan att flera perspektiv kommer fram
+\item
+  Vid användandet av digital teknik i anslutning till user involvement beakta äldres heterogenitet och försök att hitta strategier för att den avsedda målgruppen kan ta den i bruk, och om deltagarna inte är representativa för den äldre gruppen i stort så var tydlig med att lyfta fram det som en begränsning i studien.
+\end{itemize}
+\hypertarget{further-research-and-development}{%
+\subsection{Further research and development}\label{further-research-and-development}}
+
+Behövs ytterligare forskning för att undersöka hur dessa föreslagna strategier kan vara behjälpliga i att i högre utstäckning skapa förutsättningar för att även grupper som idag inte vill eller anser sig ha förmågan att delta i forskning om åldrande och hälsa.
+
+\hypertarget{acknowledgement}{%
+\chapter{Acknowledgement}\label{acknowledgement}}
+
+\appendix
+
+\hypertarget{the-first-appendix}{%
+\chapter{The First Appendix}\label{the-first-appendix}}
+
+This first appendix includes all of the R chunks of code that were hidden throughout the document (using the \texttt{include\ =\ FALSE} chunk tag) to help with readibility and/or setup.
+
+\textbf{In the main Rmd file}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# This chunk ensures that the thesisdown package is}
+\CommentTok{\# installed and loaded. This thesisdown package includes}
+\CommentTok{\# the template files for the thesis.}
+\ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\FunctionTok{require}\NormalTok{(remotes)) \{}
+  \ControlFlowTok{if}\NormalTok{ (params}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Install needed packages for \{thesisdown\}}\StringTok{\textasciigrave{}}\NormalTok{) \{}
+    \FunctionTok{install.packages}\NormalTok{(}\StringTok{"remotes"}\NormalTok{, }\AttributeTok{repos =} \StringTok{"https://cran.rstudio.com"}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+    \FunctionTok{stop}\NormalTok{(}
+      \FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}You need to run install.packages("remotes")",}
+\StringTok{            "first in the Console.\textquotesingle{}}\NormalTok{)}
+\NormalTok{    )}
+\NormalTok{  \}}
+\NormalTok{\}}
+\ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\FunctionTok{require}\NormalTok{(thesisdown)) \{}
+  \ControlFlowTok{if}\NormalTok{ (params}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Install needed packages for \{thesisdown\}}\StringTok{\textasciigrave{}}\NormalTok{) \{}
+\NormalTok{    remotes}\SpecialCharTok{::}\FunctionTok{install\_github}\NormalTok{(}\StringTok{"ismayc/thesisdown"}\NormalTok{)}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+    \FunctionTok{stop}\NormalTok{(}
+      \FunctionTok{paste}\NormalTok{(}
+        \StringTok{"You need to run"}\NormalTok{,}
+        \StringTok{\textquotesingle{}remotes::install\_github("ismayc/thesisdown")\textquotesingle{}}\NormalTok{,}
+        \StringTok{"first in the Console."}
+\NormalTok{      )}
+\NormalTok{    )}
+\NormalTok{  \}}
+\NormalTok{\}}
+\FunctionTok{library}\NormalTok{(thesisdown)}
+\CommentTok{\# Set how wide the R output will go}
+\FunctionTok{options}\NormalTok{(}\AttributeTok{width =} \DecValTok{70}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\textbf{In Chapter \ref{ref-labels}:}
+
+\hypertarget{the-second-appendix-for-fun}{%
+\chapter{The Second Appendix, for Fun}\label{the-second-appendix-for-fun}}
+
+\backmatter
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\noindent
+
+\setlength{\parindent}{-0.20in}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-angel2000}{}}%
+Angel, E. (2000). \emph{Interactive computer graphics : A top-down approach with OpenGL}. Boston, MA: Addison Wesley Longman.
+
+\leavevmode\vadjust pre{\hypertarget{ref-angel2001}{}}%
+Angel, E. (2001a). \emph{Batch-file computer graphics : A bottom-up approach with QuickTime}. Boston, MA: Wesley Addison Longman.
+
+\leavevmode\vadjust pre{\hypertarget{ref-angel2002a}{}}%
+Angel, E. (2001b). \emph{Test second book by angel}. Boston, MA: Wesley Addison Longman.
+
+\leavevmode\vadjust pre{\hypertarget{ref-jonsson2021}{}}%
+Jonsson, O., Frögren, J., Haak, M., Slaug, B., \& Iwarsson, S. (2021). Understanding the wicked problem of providing accessible housing for the ageing population in sweden. \emph{International Journal of Environmental Research and Public Health}, \emph{18}(3), 1169. http://doi.org/\href{https://doi.org/10.3390/ijerph18031169}{10.3390/ijerph18031169}
+
+\end{CSLReferences}
+
+% Index?
+
+\end{document}
